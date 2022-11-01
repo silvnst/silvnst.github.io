@@ -1,0 +1,70 @@
+/*
+    CSS
+    @silvnst
+*/
+
+body {
+    min-height: 100%;
+}
+
+
+
+/* Header */
+
+#header {
+    background: linear-gradient(120deg, rgba(63,65,69,0.6) 0%, rgba(187, 154, 61, 0.6) 100%), url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+div.img {
+    width: 6.25rem;
+}
+div.img > div {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+/* Icons im Footer*/
+
+#footer a > i {
+    margin: 0 5px;
+}
+
+#header #footer i {
+    text-align: end;
+}
+
+/* Responsiveness */
+
+@media (min-width: 992px) {
+
+    #header {
+        width: 30%;
+        height: 100%;
+        position: fixed;
+    }
+
+    #main {
+        margin-left: 30%;
+    }
+
+    #main > .container-lg {
+        min-height: 100vh;
+    }
+
+}
+
+/* Override ugly bootstrap */
+
+:root {
+    --bs-link-color: darkgrey;
+}
+
+a {
+    color: unset;
+}
