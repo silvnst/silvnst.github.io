@@ -29,7 +29,12 @@ div.img > div {
     border-radius: 100%;
 }
 
-/* Icons im Footer*/
+/* Main */
+#main {
+    min-height: 60vh;
+}
+
+/* Footer*/
 
 #footer a > i {
     margin: 0 5px;
@@ -37,6 +42,17 @@ div.img > div {
 
 #header #footer i {
     text-align: end;
+}
+
+#footer {
+    background: linear-gradient(120deg, rgba(63,65,69,0.6) 0%, rgba(187, 154, 61, 0.6) 100%), url(../img/bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* Sections */
+.section > .col-12:not(:first-of-type) > h4 {
+    border-top: 1px solid #efefef;
 }
 
 /* Responsiveness */
@@ -55,6 +71,10 @@ div.img > div {
 
     #main > .container-lg {
         min-height: 100vh;
+    }
+    
+    #footer {
+        background: none;
     }
 
 }
